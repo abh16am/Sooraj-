@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .dashboard {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .dashboard .summary {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .dashboard .summary h3 {
+            color: #333;
+        }
+
+        .dashboard .summary p {
+            color: #777;
+        }
+
+        .expenses-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .expenses-list li {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .expenses-list li:last-child {
+            border: none;
+        }
+
+        .expenses-list .expense-amount {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .add-expense-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .add-expense-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Expense Tracker Dashboard</h1>
+    </div>
+    <div class="container">
+        <div class="dashboard">
+            <div class="summary">
+                <h3>Total Expenses</h3>
+                <p>$1,250.00</p>
+            </div>
+            <div class="summary">
+                <h3>Monthly Budget</h3>
+                <p>$2,000.00</p>
+            </div>
+            <div class="summary">
+                <h3>Remaining Budget</h3>
+                <p>$750.00</p>
+            </div>
+        </div>
+        <h2>Expense List</h2>
+        <ul class="expenses-list">
+            <li>
+                <span>Electricity Bill</span>
+                <span class="expense-amount">$150.00</span>
+            </li>
+            <li>
+                <span>Groceries</span>
+                <span class="expense-amount">$300.00</span>
+            </li>
+            <li>
+                <span>Gas Bill</span>
+                <span class="expense-amount">$80.00</span>
+            </li>
+            <!-- Add more expense items here -->
+        </ul>
+        <a href="4.html">
+
+        <button class="add-expense-button">Add Expense</button></a>
+    </div>
+</body>
+</html>
